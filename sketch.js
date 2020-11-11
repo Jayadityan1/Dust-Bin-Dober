@@ -25,7 +25,7 @@ function setup() {
 	box2 = new Box(1185,420,15,170);
 	box3 = new Box(1015,420,15,170);
 	
-	ground1 = new Ground(700,550,1400,30);
+	ground1 = new Ground(700,550,1400,45);
 	
 	paper1 = new Paper(200,300);
 	
@@ -39,13 +39,13 @@ function draw() {
 	Engine.update(engine);
 	
 	
-	
+	paper1.display();
 	ground1.display();
 	box3.display();
 	box1.display();
 	box2.display();
 	image(boximage,1000,330,200,200);
-	paper1.display();
+	
 	
  
 }
